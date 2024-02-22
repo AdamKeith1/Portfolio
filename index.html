@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body style="background-color: ivory; color: rgb(46,46,46);">
+    <nav id="desktop-nav">
+        <div class="logo">Adam Keith</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Adam Keith</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Adam Keith profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Adam Keith</h1>
+            <p class="section__text__p2">Computer Engineering Student</p>
+            <div class="btn-container">
+                <a href="./assets/Adam_Keith_resume.pdf" download="Adam_Keith_resume.pdf">
+                    <button class="btn btn-color-2" 
+                        type="button">
+                        Download Resume
+                    </button>
+                </a>
+            <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'">
+                Contact
+            </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="LinkedIN"
+                    class="icon link-icon"
+                    onclick="location.href='https://www.linkedin.com/in/adam-keith-538586249/'"
+                />
+                <img 
+                    src="./assets/github.png" 
+                    alt="Github"
+                    class="icon git-icon"
+                    onclick="location.href='https://github.com/AdamKeith1'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <!-- <p class="section__text__p1">Get To Know More</p> -->
+        <p class="title">About Me</p>
+        <div class="section-container">
+            <!-- <div class="section__pic-container">
+                <img 
+                    src="./assets/Purdue.jpg" 
+                    alt="Profile Picture"
+                    class="about-pic"
+                />
+            </div> -->
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/experience.png" 
+                        alt="Experience icon" 
+                        class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>WVOT Intern<br />AMP STM32 sub-team</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="Education icon" 
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>Computer Engineering<br />Junior</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        My name is Adam Keith. I am a junior studying Computer Engineering at Purdue University.
+                        I have worked as a PA1 at the West Virginia Office of Technology and work on the STM32 electrical
+                        sub-team for Autonomous Motorsports Purdue. I created this portfolio to showcase my abilites and 
+                        recent projects. Additionally, I'm a lab teaching assistant for Digital Logic Design. In my free time I enjoy playing soccer and basketball.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="arrow" 
+            class="icon arrow" 
+            onclick="location.href='./#experience'"
+        />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Skills</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                src="./assets/check-new.png"
+                                alt="Experience icon" 
+                                class="icon-check"
+                                />
+                                <div>
+                                    <h3>C</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/check-new.png"
+                                alt="Experience icon" 
+                                class="icon-check"
+                                />
+                                <div>
+                                    <h3>Python</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/check-new.png"
+                                alt="Experience icon" 
+                                class="icon-check"
+                                />
+                                <div>
+                                    <h3>Verilog</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/check-new.png"
+                                alt="Experience icon" 
+                                class="icon-check"
+                                />
+                                <div>
+                                    <h3>STM32</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/check-new.png"
+                                alt="Experience icon" 
+                                class="icon-check"
+                                />
+                                <div>
+                                    <h3>KiCad</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/check-new.png"
+                                alt="Experience icon" 
+                                class="icon-check"
+                                />
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="details-container">
+                        <h2 class="experience-sub-title">Coursework</h2>
+                        <div class="article-container">
+                            <article>
+                                <img 
+                                src="./assets/checkmark.webp"
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>ECE 33700</h3>
+                                    <p>ASIC Design Lab</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.webp"
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>ECE 47300</h3>
+                                    <p>Intro to AI</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.webp"
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>ECE 36200</h3>
+                                    <p>Microprocessors  </p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.webp"
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>ECE 36800</h3>
+                                    <p>Data Structures</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.webp"
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>ECE 30834</h3>
+                                    <p>Comp. Graphics</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img 
+                                src="./assets/checkmark.webp"
+                                alt="Experience icon" 
+                                class="icon"
+                                />
+                                <div>
+                                    <h3>ECE 27000</h3>
+                                    <p>Digital Logic</p>
+                                </div>
+                            </article>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="arrow" 
+            class="icon arrow" 
+            onclick="location.href='./#projects'"
+        />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-1.jpg" alt="project 1" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">STM32 Video Game</h2>
+                    <div class="btn-container">
+                        <!-- <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://github.com/AdamKeith1/KiCad-6.0-Serial-Display-Interface'">
+                            Github
+                        </button> -->
+                        <button class="git-button">
+                            <img src="./assets/github.png" class="icon git-icon" width="20" height="20" viewBox="0 0 24 24" fill="nonw">                            </img>
+                            <p class="text">Github</p>
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-2.png" alt="project 2" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Number Base Converter</h2>
+                    <div class="btn-container">
+                        <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://github.com/AdamKeith1/Number-Base-Converter-App'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/project-3.png" alt="project 3" class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Audio Equalizer</h2>
+                    <div class="btn-container">
+                        <!-- <button 
+                            class="btn btn-color-2 project-btn" 
+                            onclick="location.href='https://github.com/AdamKeith1'">
+                            Github
+                        </button> -->
+                        <p class="project-para">Prototyped an audio equalizer on a breadboard. Features treble, bass and volume control.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img 
+            src="./assets/arrow.png" 
+            alt="arrow" 
+            class="icon arrow" 
+            onclick="location.href='./#contact'"
+        />
+    </section>
+    <section id="contact">
+        <!-- <p class="section__text__p1">Get in Touch</p> -->
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:adamjkeith22@gmail.com">adamjkeith22@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/adam-keith-538586249/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Adam Keith. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
