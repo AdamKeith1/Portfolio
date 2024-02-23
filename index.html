@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="mediaqueries.css">
 </head>
-<body style="background-color: ivory; color: rgb(46,46,46);">
+<body style="background-color: rgb(30,30,30); color: white;">
     <nav id="desktop-nav">
         <div class="logo">Adam Keith</div>
         <div>
@@ -98,16 +98,11 @@
                         class="icon-exp"
                         />
                         <div class="list-container">
-                            <h3>Experience</h3>
-                            <h4>WVOT Intern</h4>
-                            <ul>
-                                <li>Item 1</li>
-                                <li>Item 1</li>
-                            </ul>
-                            <h4>AMP Subteam</h4>
-                            <ul>
-                                <li>Item 1</li>
-                                <li>Item 1</li>
+                            <h2>Experience</h2>
+                            <ul class="exp-list">
+                                <li>AMP STM32 Sub-Team</li>
+                                <li class="exp-list">WVOT Programmer Analyst I</li>
+                                <li>Digital Logic Lab Teaching Assistant</li>
                             </ul>
                         </div>
 
@@ -118,22 +113,32 @@
                         alt="Education icon" 
                         class="icon-edu"
                         />
-                        <h3>Education</h3>
-                        <p>Computer Engineering<br />Junior</p>
+                        <!-- <h3>Education</h3>
+                        <p>Computer Engineering<br />Junior</p> -->
+
+                        <div class="list-container">
+                            <h2>Education</h2>
+                            <ul class="exp-list">
+                                <li>Junior</li>
+                                <li class="exp-list">Computer Engineering</li>
+                                <li>Hardware Design and Embedded Systems</li>
+                            </ul>
+                        </div>
+
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>
-                        My name is Adam Keith. I am a junior studying Computer Engineering at Purdue University.
-                        I have worked as a PA1 at the West Virginia Office of Technology and work on the STM32 electrical
-                        sub-team for Autonomous Motorsports Purdue. I created this portfolio to showcase my abilites and 
-                        recent projects. Additionally, I'm a lab teaching assistant for Digital Logic Design. In my free time I enjoy playing soccer and basketball.
+                    <h2>About Me</h2>
+                    <p class="about-para">
+                        My name is Adam Keith. I am a junior studying Computer Engineering at Purdue University with a focus on hardware design and embedded systems.
+                        I created this portfolio to showcase my skills, experience and projects. In my free time I enjoy playing soccer, watching formula 1 and thinking
+                        about new projects to implement.
                     </p>
                 </div>
             </div>
         </div>
         <img 
-            src="./assets/arrow.webp" 
+            src="./assets/arrow.png" 
             alt="arrow" 
             class="icon arrow" 
             onclick="location.href='./#experience'"
@@ -144,152 +149,49 @@
             <h1 class="title">Experience</h1>
             <div class="experience-details-container">
                 <div class="about-containers">
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">Skills</h2>
-                        <div class="article-container">
-                            <article>
-                                <img 
-                                src="./assets/check-new.png"
-                                alt="Experience icon" 
-                                class="icon-check"
-                                />
-                                <div>
-                                    <h3 class="skill">C</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img 
-                                src="./assets/check-new.png"
-                                alt="Experience icon" 
-                                class="icon-check"
-                                />
-                                <div>
-                                    <h3>Python</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img 
-                                src="./assets/check-new.png"
-                                alt="Experience icon" 
-                                class="icon-check"
-                                />
-                                <div>
-                                    <h3>Verilog</h3>
-                                    <p>Experienced</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img 
-                                src="./assets/check-new.png"
-                                alt="Experience icon" 
-                                class="icon-check"
-                                />
-                                <div>
-                                    <h3>STM32</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img 
-                                src="./assets/check-new.png"
-                                alt="Experience icon" 
-                                class="icon-check"
-                                />
-                                <div>
-                                    <h3>KiCad</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img 
-                                src="./assets/check-new.png"
-                                alt="Experience icon" 
-                                class="icon-check"
-                                />
-                                <div>
-                                    <h3>HTML</h3>
-                                    <p>Intermediate</p>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <h2 class="experience-sub-title">Coursework</h2>
-                        <div class="article-container">
-                            <article>
-                                <img 
-                                src="./assets/check-new.png"
-                                alt="Experience icon" 
-                                class="icon-check"
-                                />
-                                <div>
-                                    <h3>ECE 33700</h3>
-                                    <p>ASIC Design Lab</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img 
-                                src="./assets/check-new.png"
-                                alt="Experience icon" 
-                                class="icon-check"
-                                />
-                                <div>
-                                    <h3>ECE 47300</h3>
-                                    <p>Intro to AI</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img 
-                                src="./assets/check-new.png"
-                                alt="Experience icon" 
-                                class="icon-check"
-                                />
-                                <div>
-                                    <h3>ECE 36200</h3>
-                                    <p>Microprocessors  </p>
-                                </div>
-                            </article>
-                            <article>
-                                <img 
-                                src="./assets/check-new.png"
-                                alt="Experience icon" 
-                                class="icon-check"
-                                />
-                                <div>
-                                    <h3>ECE 36800</h3>
-                                    <p>Data Structures</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img 
-                                src="./assets/check-new.png"
-                                alt="Experience icon" 
-                                class="icon-check"
-                                />
-                                <div>
-                                    <h3>ECE 30834</h3>
-                                    <p>Comp. Graphics</p>
-                                </div>
-                            </article>
-                            <article>
-                                <img 
-                                src="./assets/check-new.png"
-                                alt="Experience icon" 
-                                class="icon-check"
-                                />
-                                <div>
-                                    <h3>ECE 27000</h3>
-                                    <p>Digital Logic</p>
-                                </div>
-                            </article>    
-                        </div>
-                    </div>
+                        <div class="card">
+                            <span class="title">Skills</span>
+                            <div class="card__tags">
+                              <ul class="tag">
+                                <li class="tag__name">System Verilog</li>
+                                <li class="tag__name">C</li>
+                                <li class="tag__name">Python</li>
+                                <li class="tag__name">STM32</li>
+                                <li class="tag__name">RTL Design</li>
+                                <li class="tag__name">KiCad</li>
+                                <li class="tag__name">QuestaSim</li>
+                                <li class="tag__name">HTML</li>
+                                <li class="tag__name">RISC-V</li> 
+                                <li class="tag__name">Agile</li> 
+                              </ul>
+                            </div>
+                          </div>
+                        <div class="card">
+                            <span class="title">Coursework</span>
+                            <div class="card__tags">
+                              <ul class="tag">
+                                <li class="tag__name"
+                                    onclick="location.href='https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=389.0&show=true&type=undergrad'"
+                                >ASIC Design Lab</li>
+                                <li class="tag__name"
+                                    onclick="location.href='https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/UGO/UGO/CourseInfo/courseInfo?courseid=64&show=true&type=undergrad'"
+                                >AI</li>
+                                <li class="tag__name"
+                                    onclick="location.href='https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/UGO/CourseInfo/courseInfo?courseid=542&show=true&type=undergrad'"
+                                >Data Structures & Algorithms</li>
+                                <li class="tag__name"
+                                    onclick="location.href='https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/UGO/UGO/CourseInfo/courseInfo?courseid=612&show=true&type=undergrad'"
+                                >Microprocessors</li>
+                                <li class="tag__name"
+                                    onclick="location.href='https://engineering.purdue.edu/ECE/Academics/Undergraduates/UGO/CourseInfo/courseInfo?courseid=607&show=true&type=undergrad'"
+                                >Digital Logic Design</li>
+                              </ul>
+                            </div>
+                          </div>
                 </div>
             </div>
         <img 
-            src="./assets/arrow.webp" 
+            src="./assets/arrow.png" 
             alt="arrow" 
             class="icon arrow" 
             onclick="location.href='./#projects'"
@@ -306,15 +208,11 @@
                     </div>
                     <h2 class="experience-sub-title project-title">STM32 Video Game</h2>
                     <div class="btn-container">
-                        <!-- <button 
+                        <button 
                             class="btn btn-color-2 project-btn" 
                             onclick="location.href='https://github.com/AdamKeith1/KiCad-6.0-Serial-Display-Interface'">
                             Github
-                        </button> -->
-                        <button class="git-button">
-                            <img src="./assets/github.png" class="icon git-icon" width="20" height="20" viewBox="0 0 24 24" fill="nonw">                            </img>
-                            <p class="text">Github</p>
-                        </button>
+                        </button> 
                     </div>
                 </div>
                 <div class="details-container color-container">
@@ -334,20 +232,19 @@
                     <div class="article-container">
                         <img src="./assets/project-3.png" alt="project 3" class="project-img">
                     </div>
-                    <h2 class="experience-sub-title project-title">Audio Equalizer</h2>
+                    <h2 class="experience-sub-title project-title">Image Filter ASIC</h2>
                     <div class="btn-container">
-                        <!-- <button 
+                        <button 
                             class="btn btn-color-2 project-btn" 
                             onclick="location.href='https://github.com/AdamKeith1'">
                             Github
-                        </button> -->
-                        <p class="project-para">Prototyped an audio equalizer on a breadboard. Features treble, bass and volume control.</p>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
         <img 
-            src="./assets/arrow.webp" 
+            src="./assets/arrow.png" 
             alt="arrow" 
             class="icon arrow" 
             onclick="location.href='./#contact'"
