@@ -172,11 +172,72 @@ section {
     height: 80vh;
 }
 
+/* NEW */
+.bubble-button {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 45px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(40,40,40);
+    border: white 0.1rem solid;
+    padding: 0.8em 1.6em;
+    /* border: none; */
+    border-radius: .5rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .bubble-button span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 32px;
+    width: 32px;
+    background-color: #b671d6;
+    border-radius: 50%;
+    transition: .6s ease;
+  }
+  
+  .bubble-button span:nth-child(6) {
+    position: relative;
+  }
+  
+  .bubble-button span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+  }
+  
+  .bubble-button span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+  }
+  
+  .bubble-button span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+  }
+  
+  .bubble-button span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+  }
+  
+  .bubble-button span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+  }
+  
+  .bubble-button:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+  }
+    
+
+/* NEW */
 .section__pic-container {
     display: flex;
     height: 300px;
     width: 300px;
     margin: auto 0;
+    border: white 0.15rem solid;
+    border-radius: 14rem;
 }
 
 .section__text {
@@ -244,6 +305,9 @@ section {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    /* padding-left: 10rem;
+    padding-right: 10rem;
+    padding-bottom: 1rem; */
 }
 
 .btn {
@@ -519,6 +583,64 @@ article .icon {
 #projects {
     position: relative;
 }
+
+/* NEW */
+.bubble-button-git {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 45px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(30,30,30);
+    border: white 0.1rem solid;
+    padding: 0.8em 1.6em;
+    /* border: none; */
+    border-radius: .5rem;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .bubble-button-git span:not(:nth-child(6)) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 32px;
+    width: 32px;
+    background-color: #b671d6;
+    border-radius: 50%;
+    transition: .6s ease;
+  }
+  
+  .bubble-button-git span:nth-child(6) {
+    position: relative;
+  }
+  
+  .bubble-button-git span:nth-child(1) {
+    transform: translate(-3.3em, -4em);
+  }
+  
+  .bubble-button-git span:nth-child(2) {
+    transform: translate(-6em, 1.3em);
+  }
+  
+  .bubble-button-git span:nth-child(3) {
+    transform: translate(-.2em, 1.8em);
+  }
+  
+  .bubble-button-git span:nth-child(4) {
+    transform: translate(3.5em, 1.4em);
+  }
+  
+  .bubble-button-git span:nth-child(5) {
+    transform: translate(3.5em, -3.8em);
+  }
+  
+  .bubble-button-git:hover span:not(:nth-child(6)) {
+    transform: translate(-50%, -50%) scale(4);
+    transition: 1.5s ease;
+  }
+    
 
 .project-para {
     font-size: 1rem;
