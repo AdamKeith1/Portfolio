@@ -431,8 +431,9 @@ section {
 }
 
 .card {
-  width: 420px;
-  height: 300px;
+  /* Here */
+  width: 550px;
+  height: 350px;
   background: rgb(40, 40, 40);
   padding: 10px;
   display: flex;
@@ -440,6 +441,8 @@ section {
   color: white;
   border: white 0.2rem solid;
   border-radius: 0.5rem;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
@@ -535,6 +538,8 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .article-container {
@@ -551,6 +556,7 @@ article {
   width: 9rem;
   justify-content: space-around;
   gap: 0.5rem;
+  
 }
 
 article .icon {
